@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickTranslate 隐私政策</title>
+    <style>
+      :root {
+        color: #1c2638;
+        background: #f4f6f9;
+        font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+      main {
+        width: min(820px, calc(100% - 32px));
+        margin: 32px auto;
+        padding: 34px 38px 44px;
+        background: #fff;
+        border: 1px solid #dbe2eb;
+        border-radius: 8px;
+        box-shadow: 0 16px 44px rgba(15, 23, 42, 0.08);
+      }
+      h1, h2 { color: #111827; letter-spacing: 0; }
+      h1 { margin: 0 0 8px; font-size: 28px; }
+      h2 { margin: 30px 0 10px; font-size: 18px; }
+      p, li { color: #465166; font-size: 14px; line-height: 1.75; }
+      ul { padding-left: 22px; }
+      .meta { color: #687386; font-size: 13px; }
+      .notice {
+        margin: 22px 0;
+        padding: 15px 17px;
+        background: #eef4fc;
+        border-left: 3px solid #174ea6;
+      }
+      code { color: #174ea6; }
+      a { color: #174ea6; }
+      @media (max-width: 600px) {
+        main { width: 100%; margin: 0; padding: 24px 20px 36px; border: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>QuickTranslate 隐私政策</h1>
+      <p class="meta">生效日期：2026 年 7 月 18 日</p>
+
+      <div class="notice">
+        QuickTranslate 仅在用户主动请求翻译时，将用户明确选择或输入的文本发送给用户选择的翻译服务商。QuickTranslate 不运营翻译中转服务器。
+      </div>
+
+      <h2>1. 我们处理的数据</h2>
+      <ul>
+        <li>用户主动选择或输入并请求翻译的网页、PDF 或手动输入文本。</li>
+        <li>用户提供的第三方模型 API key、服务商、模型和语言设置。</li>
+        <li>保存在本机的扩展开关、阅读状态、PDF 高亮和评论。</li>
+      </ul>
+
+      <h2>2. 数据如何使用</h2>
+      <p>
+        翻译文本仅用于完成用户请求的翻译。API key 仅用于认证用户选择的服务商、刷新该账号可用模型及提交翻译请求。PDF 高亮、评论和阅读状态仅用于本地 PDF 阅读与批注功能。
+      </p>
+
+      <h2>3. 第三方服务商</h2>
+      <p>
+        根据用户的选择，翻译文本及完成请求所需的凭据可能直接发送至 LibreTranslate、MyMemory、OpenAI、Anthropic、Google Gemini、DeepSeek、xAI、Groq、Mistral、OpenRouter、阿里云百炼、Moonshot、智谱或 Together。服务商按照各自的条款和隐私政策处理请求。用户应避免翻译不希望交由所选服务商处理的敏感内容。
+      </p>
+
+      <h2>4. 本地存储与保留</h2>
+      <p>
+        设置和 API key 使用 <code>chrome.storage.local</code> 保存在当前 Chrome 配置文件中，不使用 Chrome Sync。QuickTranslate 不对本地 API key 额外加密。移除扩展或清除扩展存储会删除这些设置。PDF 文件、批注和阅读会话保存在本机浏览器存储或用户保存的 PDF 文件中。
+      </p>
+
+      <h2>5. 我们不会做的事情</h2>
+      <ul>
+        <li>不会收集或出售完整浏览历史。</li>
+        <li>不会将用户数据用于个性化广告、信用评估或数据经纪。</li>
+        <li>不会允许开发者人工阅读用户提交的翻译文本。</li>
+        <li>不会在用户未确认数据说明时调用翻译或模型列表服务。</li>
+      </ul>
+
+      <h2>6. 安全</h2>
+      <p>
+        与支持的服务商之间的请求使用 HTTPS。扩展不执行服务商返回的代码，只将响应作为翻译文本或模型元数据处理。用户应保护自己的 Chrome 配置文件和 API key。
+      </p>
+
+      <h2>7. 用户控制</h2>
+      <p>
+        用户可以关闭翻译功能、删除 API key、撤回数据处理同意、清除扩展本地数据，或卸载扩展。撤回同意后，翻译和模型列表请求将被阻止。
+      </p>
+
+      <h2>8. 有限使用</h2>
+      <p>
+        QuickTranslate 对通过 Chrome 扩展权限获得的信息的使用和传输遵守 Chrome Web Store User Data Policy，包括 Limited Use 要求；数据仅用于提供用户明确请求的翻译和相关 PDF 阅读功能。
+      </p>
+
+      <h2>9. 政策更新</h2>
+      <p>
+        如果数据处理方式发生实质变化，我们会更新本政策，并在扩展内显著提示用户，在新处理开始前重新取得同意。
+      </p>
+
+      <h2>10. 联系方式</h2>
+      <p>
+        联系发布者：请使用 QuickTranslate Chrome Web Store 商品页面中列出的支持渠道。
+      </p>
+    </main>
+  </body>
+</html>
